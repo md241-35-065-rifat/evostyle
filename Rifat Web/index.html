@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOSTYLE - Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3082/3082383.png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">EVOSTYLE</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+        </div>
+        <div class="cart-icon" id="cart-icon">
+            🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to EVOSTYLE</h1>
+            <p>Discover the latest trends in fashion at affordable prices</p>
+            <button class="cta-button">Shop Now</button>
+        </section>
+
+        <!-- Men's Products -->
+        <h2 id="men" class="section-title">Men's Collection</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/51NWJMxZ9uL._AC_UY1100_.jpg" alt="Classic Cotton T-Shirt">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Classic Cotton T-Shirt</div>
+                    <div class="product-price">650 BDT</div>
+                    <button class="buy-button" data-name="Classic Cotton T-Shirt" data-price="650" data-image="https://m.media-amazon.com/images/I/51NWJMxZ9uL._AC_UY1100_.jpg">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77050594_TM.jpg?imwidth=2048&imdensity=1&ts=1715269240341" alt="Slim Fit Jeans">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Slim Fit Jeans</div>
+                    <div class="product-price">1500 BDT</div>
+                    <button class="buy-button" data-name="Slim Fit Jeans" data-price="1500" data-image="https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77050594_TM.jpg?imwidth=2048&imdensity=1&ts=1715269240341">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://richmanbd.com/wp-content/uploads/2025/10/1a-1-600x600.jpg" alt="Formal Shirt">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Formal Shirt</div>
+                    <div class="product-price">2290 BDT</div>
+                    <button class="buy-button" data-name="Formal Shirt" data-price="2290" data-image="https://richmanbd.com/wp-content/uploads/2025/10/1a-1-600x600.jpg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/9402e77ec98d6cdae3a1d35bf4a86e3e.jpg_720x720q80.jpg" alt="Denim Jacket">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Denim Jacket</div>
+                    <div class="product-price">2590 BDT</div>
+                    <button class="buy-button" data-name="Denim Jacket" data-price="2590" data-image="https://img.drz.lazcdn.com/static/bd/p/9402e77ec98d6cdae3a1d35bf4a86e3e.jpg_720x720q80.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women's Products -->
+        <h2 id="women" class="section-title">Women's Collection</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2024/05/16/0f/1715862915781c1a29bc9e99c4a3168bcf66efe953_wk_1722535980_thumbnail_750x999.jpg" alt="Summer Dress">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Summer Dress</div>
+                    <div class="product-price">800 BDT</div>
+                    <button class="buy-button" data-name="Floral Summer Dress" data-price="800" data-image="https://img.ltwebstatic.com/images3_pi/2024/05/16/0f/1715862915781c1a29bc9e99c4a3168bcf66efe953_wk_1722535980_thumbnail_750x999.jpg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/e2ee84945fb0dda73acc3685039e36de.jpg_720x720q80.jpg" alt="Casual Blouse">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Casual Blouse</div>
+                    <div class="product-price">600 BDT</div>
+                    <button class="buy-button" data-name="Casual Blouse" data-price="600" data-image="https://img.drz.lazcdn.com/static/bd/p/e2ee84945fb0dda73acc3685039e36de.jpg_720x720q80.jpg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/3194Z0lOYcL._SL500_._AC_SL500_.jpg" alt="Skirt">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">A-Line Skirt</div>
+                    <div class="product-price">650 BDT</div>
+                    <button class="buy-button" data-name="A-Line Skirt" data-price="650" data-image="https://images-na.ssl-images-amazon.com/images/I/3194Z0lOYcL._SL500_._AC_SL500_.jpg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://lewkin.com/cdn/shop/files/001_Black_ee6c7890-482b-4843-93a2-b20c222c11d7.jpg?v=1720157366" alt="Leather Jacket">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Leather Jacket</div>
+                    <div class="product-price">1890 BDT</div>
+                    <button class="buy-button" data-name="Leather Jacket" data-price="1890" data-image="https://lewkin.com/cdn/shop/files/001_Black_ee6c7890-482b-4843-93a2-b20c222c11d7.jpg?v=1720157366">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About EVOSTYLE</h2>
+                    <p>Welcome to EVOSTYLE, your premier destination for contemporary fashion that blends style, comfort, and affordability. Founded in 2020, we've been committed to bringing you the latest trends without compromising on quality.</p>
+                    <p>Our mission is simple: to empower individuals to express their unique style through carefully curated collections that cater to diverse tastes and occasions. From casual everyday wear to sophisticated formal attire, we have something for everyone.</p>
+                    <p>At EVOSTYLE, we believe fashion should be accessible to all. That's why we work directly with manufacturers to eliminate middlemen, ensuring you get premium quality at unbeatable prices.</p>
+                    <p>Join our fashion-forward community today and experience the EVOSTYLE difference!</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3768005/pexels-photo-3768005.jpeg?cs=srgb&dl=pexels-willoworld-3768005.jpg&fm=jpg" alt="EVOSTYLE Store">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you! Get in touch with us through any of the following channels:</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>01302668956</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                           
+                            <p>ashrafulrifat9@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>Mostul-Khilkhet, Dhaka</p>
+                            <p>Dhaka-1230, Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Our Open Hours</h3>
+                            <p>Friday - Wednesday: 9:00 AM - 10:00 PM</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send us a message for more details</h2>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Shopping Cart</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">Total: <span id="cart-total">0</span> BDT</div>
+                <div class="cart-actions">
+                    <button id="continue-shopping" class="cta-button">Continue Shopping</button>
+                    <button id="checkout-btn" class="cta-button" style="background-color: green;">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Login</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+                <div class="form-footer">
+                    Don't have an account? <a id="show-register" style="color:black">Register here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Register</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-first-name">First Name</label>
+                    <input type="text" id="register-first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-last-name">Last Name</label>
+                    <input type="text" id="register-last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                </div>
+                <button type="submit" class="form-submit">Register</button>
+                <div class="form-footer">
+                    Already have an account? <a id="show-login" style="color:black">Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Notification -->
+    <div id="cart-notification" class="cart-notification">
+        Item added to cart successfully!
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">EVOSTYLE</div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#men">Men</a>
+                <a href="#women">Women</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2024 EVOSTYLE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
